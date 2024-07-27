@@ -1,13 +1,15 @@
 import React from "react";
 import "./ourLocation.css";
 
+import australia from "../images/australia.svg";
+
 function OurLocations() {
   return (
     <div className="container-top">
       <div className="container">
         <div className="locationAll">
           <div className="img-australia">
-            <img className="australia" src="../../images/australia.svg"></img>
+            <img className="australia" src={australia}></img>
           </div>
           <div className="location">
             <div className="titleLocation"></div>

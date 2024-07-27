@@ -26,22 +26,22 @@
 }
 
 .safe-eco {
-    background: url('../../images/eco.png') no-repeat center center;
+    background: url('../images/eco.png') no-repeat center center;
     background-size: contain;
 }
 
 .streamlined-booking {
-    background: url('../../images/calendar.png') no-repeat center center;
+    background: url('../images/calendar.png') no-repeat center center;
     background-size: contain;
 }
 
 .customer-oriented {
-    background: url('../../images/costumer.png') no-repeat center center;
+    background: url('../images/costumer.png') no-repeat center center;
     background-size: contain;
 }
 
 .high-quality {
-    background: url('../../images/quality.png') no-repeat center center;
+    background: url('../images/quality.png') no-repeat center center;
     background-size: contain;
 }
 

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/sun-pattern.webp");
+  background-image: url("../images/sun-pattern.webp");
   background-size: 200px 200px;
   background-repeat: repeat;
   position: relative;
@@ -83,7 +83,7 @@
 }
 
 .office-icon, .gym-icon, .com-icon, .kitchen-icon, .strata-icon, .child-icon {
-  background: url('../../images/eco.png') no-repeat center center;
+  background: url('../images/eco.png') no-repeat center center;
   background-size: contain;
 }
 
@@ -118,27 +118,27 @@
 }
 
 .image-office {
-  background: url('../../images/cleaning-office.avif') no-repeat center center;
+  background: url('../images/cleaning-office.avif') no-repeat center center;
 }
 
 .image-kit {
-  background: url('../../images/cleaning-kitchen.jpg') no-repeat center center;
+  background: url('../images/cleaning-kitchen.jpg') no-repeat center center;
 }
 
 .image-com {
-  background: url('../../images/cleaning-person.jpeg') no-repeat center center;
+  background: url('../images/cleaning-person.jpeg') no-repeat center center;
 }
 
 .image-gym {
-  background: url('../../images/cleaning-kit.jpg') no-repeat center center;
+  background: url('../images/cleaning-kit.jpg') no-repeat center center;
 }
 
 .image-strat {
-  background: url('../../images/cleaning-strata.jpg') no-repeat center center;
+  background: url('../images/cleaning-strata.jpg') no-repeat center center;
 }
 
 .image-child {
-  background: url('../../images/cleaning-child.webp') no-repeat center center;
+  background: url('../images/cleaning-child.webp') no-repeat center center;
 }
 
 .service-clean:hover {

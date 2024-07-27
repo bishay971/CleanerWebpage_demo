@@ -4,14 +4,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ClientCarousel.css";
 
+// Import images
+import cleaningKit from "../images/bunbury.png";
+import europcar from "../images/europcar.svg";
+import goodguys from "../images/goodguys.svg";
+import qantas from "../images/qantas.svg";
+import snapfitness from "../images/snapfitness.jpg";
+
 const clientLogos = [
-  // Add the path to your images here
-  "../../images/logos/bunbury.png",
-  "../../images/logos/europcar.svg",
-  "../../images/logos/goodguys.svg",
-  "../../images/logos/qantas.svg",
-  "../../images/logos/snapfitness.jpg",
-  "../../images/logos/qantas.svg",
+  cleaningKit,
+  europcar,
+  goodguys,
+  qantas,
+  snapfitness,
+  qantas,
 ];
 
 const ClientCarousel = () => {

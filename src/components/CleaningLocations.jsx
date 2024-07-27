@@ -1,6 +1,13 @@
 import React from "react";
 import "./CleaningLocations.css";
 
+// Import images
+import sydneyImage from "../images/logos/NSW.jpg";
+import brisbaneImage from "../images/logos/QL.jpg";
+import perthImage from "../images/logos/WA.jpg";
+import canberraImage from "../images/logos/ACT.webp";
+import adelaideImage from "../images/logos/SA.jpg";
+
 const CleaningLocations = () => {
   return (
     <section className="cleaning-locations">
@@ -13,23 +20,23 @@ const CleaningLocations = () => {
 
       <div className="location-grid">
         <div className="location-item">
-          <img src="../images/logos/NSW.jpg" alt="sydney" />
+          <img src={sydneyImage} alt="Sydney" />
           <p>Sydney, NSW</p>
         </div>
         <div className="location-item">
-          <img src="../images/logos/QL.jpg" alt="brisbane" />
+          <img src={brisbaneImage} alt="Brisbane" />
           <p>Brisbane, Queensland</p>
         </div>
         <div className="location-item">
-          <img src="../images/logos/WA.jpg" alt="perth" />
+          <img src={perthImage} alt="Perth" />
           <p>Perth, WA</p>
         </div>
         <div className="location-item">
-          <img src="../images/logos/ACT.webp" alt="Canberra" />
+          <img src={canberraImage} alt="Canberra" />
           <p>Canberra, ACT</p>
         </div>
         <div className="location-item">
-          <img src="../images/logos/SA.jpg" alt="Adelaide" />
+          <img src={adelaideImage} alt="Adelaide" />
           <p>Adelaide, SA</p>
         </div>
       </div>

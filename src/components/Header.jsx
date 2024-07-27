@@ -1,6 +1,8 @@
 import React from "react";
 import "./Header.css"; // Import the CSS file
 
+import logo from "../images/logo.jpeg";
+
 const Header = () => {
   return (
     <header className="header">
@@ -16,7 +18,7 @@ const Header = () => {
           <div className="main-logo">
             <div className="logo-name">
               <div className="main-title">
-                <img src="../../images/logo.jpeg" alt="Orbit Group Logo" />
+                <img src={logo} alt="Orbit Group Logo" />
               </div>
             </div>
           </div>
