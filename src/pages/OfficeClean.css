@@ -1,0 +1,39 @@
+.office-cleaning {
+    padding: 20px;
+  }
+  
+  .office-cleaning h1 {
+    color: var(--black);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .office-cleaning p {
+    color: #34495e;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .office-cleaning h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .office-cleaning ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .office-cleaning li {
+    background: #ecf0f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .office-cleaning li strong {
+    color: #e74c3c;
+  }
+  

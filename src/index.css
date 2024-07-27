@@ -1,0 +1,32 @@
+.desktop{
+    font-family: 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+:root {
+    --red: #bf401c;
+    --white: #ecf3f9;
+    --light: #B0C4DE;
+    --black: #36454F;
+    --lighter: #30a7e1;
+    --title-size: 40px;
+    --size-h2: 25px;
+    --size-h3: 20px;
+    --quote: 40px;
+  }
+
+  .border{
+    height: 5px;
+    background-color: var(--red);
+    width: 20%;
+    margin-bottom: 20px;
+    margin-top: -15px;
+  }
+
+  .comp-name{
+    color: var(--red);
+  }

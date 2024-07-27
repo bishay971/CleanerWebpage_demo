@@ -1,0 +1,49 @@
+/* Navbar.css */
+.navi-bar{
+  background-color: var(--red);
+}
+.navbar-second {
+  height: 60px; /* Navbar height */
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: var(--white); /* Logo text color */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 1.5rem; /* Logo font size */
+  font-weight: bold;
+}
+
+.nav-items-second {
+  list-style: none; /* Remove bullet points from list */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items-second li {
+  position: relative; /* Needed for dropdown positioning */
+  z-index: 3;
+}
+
+.nav-items-second li a {
+  color: var(--white); /* Link text color */
+  text-decoration: none; /* Remove underline from link */
+  padding: 15px 20px; /* Padding for navbar items */
+  display: block; /* Make the link cover the entire list item */
+  height: 60px; /* Make link cover the full height of the navbar */
+  display: flex;
+  align-items: center;
+}
+
+.nav-items-second li:hover {
+  background-color: var(--black); /* Background color on hover */
+}
+
+.nav-items-second li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}

@@ -1,0 +1,89 @@
+.header {
+    font-family: 'Trebuchet MS', sans-serif; 
+    align-items: center;
+    padding: 10px 0px;
+    background-color: white;;
+    max-height: 150px;
+  }
+  
+  .main-logo{
+    width: 100%;
+  }
+
+  .main-logo img {
+    width: 100%;
+  }
+
+  .slogan{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+
+  }
+  .top-navbar{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    max-height: 70px;
+  }
+  
+  .bottom-navbar{
+    display: flex;
+    justify-content: space-around;
+    max-height: 80px;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .logo-name{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .hours {
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .after-hours {
+    font-size: 0.8em;
+  }
+  
+  .main-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .phone {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-right: 20px;
+  }
+  
+  .book-now {
+    background-color: #30a7e1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .book-now:hover {
+    background-color: #c91515;
+  }
+  

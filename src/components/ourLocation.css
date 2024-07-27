@@ -1,0 +1,68 @@
+.container-top{
+    background-color: var(--red);
+    height: auto;
+    padding: 40px;
+    font-family: 'Trebuchet MS', sans-serif; ;
+    
+}
+
+.locationAll{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleLocation{
+    font-size: 25px;
+    color: #0C1844;
+    text-align: center;
+
+}
+  
+  .support-office {
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .header-off {
+    color: #0C1844;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .header-white{
+    font-size: 20px;
+    color: #0C1844;
+  }
+  
+  .country {
+    color: #0C1844;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .state h4 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+    color: #0C1844;
+  }
+  
+  .state p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .label {
+    color: #0C1844;
+    font-weight: bold;
+  }
+  
+  .australia{
+    height:200px;
+    width: auto;
+    /* mask: url(australia.svg); */
+    
+  }

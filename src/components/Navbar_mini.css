@@ -1,0 +1,46 @@
+.container-to{
+    background-color: #A9A9A9;
+    background-color: #A9A9A9;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    height: 30px !important;
+}
+
+.container .hmenu {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    font-size: 14px;
+    
+}
+
+.container li {
+    padding: 0 20px;
+    margin: 0px;
+    border-right: 1px solid white;
+}
+
+.container a {
+    text-decoration: none;
+    color: #36454F;
+    margin: 0 15px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    position: absolute; /* Allows z-index to work */
+    top: 0; /* Aligns the image to the top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Brings the image forward */
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2); /* Adds shadows to the image */
+    height: 100px;
+    background-color: white;
+}

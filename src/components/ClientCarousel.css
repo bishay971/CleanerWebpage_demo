@@ -1,0 +1,20 @@
+.carousel-container {
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px;
+  }
+  
+  .carousel-slide img {
+    height: 200px; /* Set a fixed height */
+    width: auto;   /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't overflow container */
+    
+  }
+  

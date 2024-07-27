@@ -1,0 +1,38 @@
+.AboutUs{
+    font-family: 'Trebuchet MS', sans-serif; 
+    background-color: var(--white);
+    height: 600px; /* Example: Set component height to full viewport height */
+    display: flex;
+    justify-content: center;
+    color: var(--black);
+}
+
+.aboutContent{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.aboutTitle {
+    margin-top: 40px;
+    font-size: var(--title-size);
+    border-bottom: 2px solid var(--red); /* Adjust color and thickness as needed */
+    display: inline-block;
+    padding-bottom: 5px; /* Adjust space between text and underline */
+    width: 30%;
+}
+
+.aboutH2{
+    margin-top: 20px;
+    font-size: var(--size-h2);
+}
+
+.aboutH4{
+    margin-top: 40px;
+    font-size: var(--size-h3);
+}
+
+.slogan-about{
+    font-size: var(--quote);
+    color: var(--light);
+}

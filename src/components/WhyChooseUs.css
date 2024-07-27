@@ -1,0 +1,100 @@
+.whole-section{
+  background-image: url("../../images/sun-pattern.webp");
+  background-size: 200px 200px;
+    background-repeat: repeat;
+}
+
+.why-choose-us {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 50%;
+  }
+
+  .welcome-to {
+    background-color: #f5f5f5;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .welcome-to h1 {
+    text-decoration: underline;
+  }
+  
+  .why-choose-us h2 {
+    color: #C80036;
+    margin-bottom: 10px;
+  }
+
+  .contents-for{
+    display: flex;
+  }
+
+  .welcome-to {
+    align-items: left;
+    padding: 20px;
+    color: #C80036;
+    width: 50%;
+  }
+
+.welcome-to h1{
+    text-align: left;
+    font-size: 20px;
+}
+
+/* .welcome-to ul {
+    padding: 10px;
+    font-size: 20px;
+} */
+
+.welcome-to ul {
+  list-style: none;
+}
+
+.welcome-to ul li:before {
+  content: '✓';
+  color: green;
+  margin-right: 10px;
+}
+
+.satisfaction{
+    width: 40%;
+}
+.guarantee{
+    width: 100%;
+    height: auto;
+}
+
+  .dropdown {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;;
+  }
+  
+  .dropdown-content {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  }
+  
+
+  .dropdown-content p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+  }
+  

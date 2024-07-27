@@ -1,0 +1,183 @@
+.back {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: var(--black);
+  height: 80vh; /* Set component height to full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/sun-pattern.webp");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.services{
+  margin-top: 0px;
+}
+
+.title-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0;
+  font-size: var(--title-size);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--red); 
+}
+
+
+.container-fluid, .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.serviceTitle {
+  font-size: var(--size-h3);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--white);
+  z-index: 3;
+}
+
+.serviceText {
+  font-size: 14px;
+  height: 100%;
+  overflow: hidden;
+  color: var(--white);
+}
+
+.service-clean {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+}
+
+.section3-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.8s ease;
+  z-index: 2;
+}
+
+.office-icon, .gym-icon, .com-icon, .kitchen-icon, .strata-icon, .child-icon {
+  background: url('../../images/eco.png') no-repeat center center;
+  background-size: contain;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--red);
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  z-index: 1;
+}
+
+.overlay_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.4;
+  transition: opacity 0.8s ease;
+  transition: background-color 0.8s ease;
+  z-index: 2;
+}
+
+.image-office, .image-kit, .image-com, .image-gym, .image-strat, .image-child {
+  background-size: contain;
+  scale: 1.5;
+}
+
+.image-office {
+  background: url('../../images/cleaning-office.avif') no-repeat center center;
+}
+
+.image-kit {
+  background: url('../../images/cleaning-kitchen.jpg') no-repeat center center;
+}
+
+.image-com {
+  background: url('../../images/cleaning-person.jpeg') no-repeat center center;
+}
+
+.image-gym {
+  background: url('../../images/cleaning-kit.jpg') no-repeat center center;
+}
+
+.image-strat {
+  background: url('../../images/cleaning-strata.jpg') no-repeat center center;
+}
+
+.image-child {
+  background: url('../../images/cleaning-child.webp') no-repeat center center;
+}
+
+.service-clean:hover {
+  background-color: var(--red);
+}
+
+.service-clean:hover .section3-icon {
+  top: 120%;
+}
+
+.service-clean:hover .serviceTitle {
+  color: var(--black);
+}
+
+.service-clean:hover .overlay, .service-clean:hover .overlay_back {
+  background-color: none;
+  opacity: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .service-clean {
+    flex: 1 1 calc(45% - 40px);
+    max-width: calc(45% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .title-section {
+    font-size: 48px;
+    width: 80%;
+  }
+
+  .service-clean {
+    flex: 1 1 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+
+  .serviceText {
+    font-size: 12px;
+  }
+}
