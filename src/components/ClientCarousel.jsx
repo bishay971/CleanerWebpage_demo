@@ -6,12 +6,12 @@ import "./ClientCarousel.css";
 
 const clientLogos = [
   // Add the path to your images here
-  "../images/logos/bunbury.png",
-  "../images/logos/europcar.svg",
-  "../images/logos/goodguys.svg",
-  "../images/logos/qantas.svg",
-  "../images/logos/snapfitness.jpg",
-  "../images/logos/qantas.svg",
+  "../../images/logos/bunbury.png",
+  "../../images/logos/europcar.svg",
+  "../../images/logos/goodguys.svg",
+  "../../images/logos/qantas.svg",
+  "../../images/logos/snapfitness.jpg",
+  "../../images/logos/qantas.svg",
 ];
 
 const ClientCarousel = () => {

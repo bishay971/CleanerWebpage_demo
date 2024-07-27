@@ -16,7 +16,7 @@ const Header = () => {
           <div className="main-logo">
             <div className="logo-name">
               <div className="main-title">
-                <img src="./../images/logo.jpeg" alt="Orbit Group Logo" />
+                <img src="../../images/logo.jpeg" alt="Orbit Group Logo" />
               </div>
             </div>
           </div>
