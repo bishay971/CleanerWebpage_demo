@@ -18,7 +18,7 @@ const Header = () => {
           <div className="main-logo">
             <div className="logo-name">
               <div className="main-title">
-                <img src={logo} alt="Orbit Group Logo" />
+                <img src={logo} alt="AP Cleaning Logo" />
               </div>
             </div>
           </div>

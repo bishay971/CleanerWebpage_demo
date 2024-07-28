@@ -2,26 +2,26 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./Carousel.css";
 
-import cleaningKit from "../images/cleaning-kit.jpg";
-import people from "../images/people.jpg";
-import cleaningPerson from "../images/cleaning-person.jpeg";
+import cleaningKit from "../images/office_clean.jpeg";
+import people from "../images/strata_clean.jpg";
+import cleaningPerson from "../images/carousel1.jpg";
 
 const slides = [
   {
-    image: people, // Use the imported variable
+    image: people,
     title: "AP Facilities",
     description:
       "Providing service excellence to our communities with care and passion. It’s About You.",
     buttonText: "Read more",
   },
   {
-    image: cleaningKit, // Use the imported variable
+    image: cleaningKit,
     title: "Committed to Quality",
     description: "Ensuring the highest standards in every task we undertake.",
     buttonText: "Learn more",
   },
   {
-    image: cleaningPerson, // Use the imported variable
+    image: cleaningPerson,
     title: "Dedicated Team",
     description: "Our team is passionate and dedicated to serving you.",
     buttonText: "Join us",

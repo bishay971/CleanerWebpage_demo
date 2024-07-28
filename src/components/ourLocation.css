@@ -66,3 +66,44 @@
     /* mask: url(australia.svg); */
     
   }
+
+
+  /* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .locationAll {
+    flex-direction: column;
+  }
+
+  .location,
+  .contactus {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .australia {
+    max-width: 100%;
+  }
+
+  .support-office,
+  .contactus .support-office {
+    padding: 10px;
+  }
+
+  .header-off,
+  .country,
+  .state h4,
+  .header-white {
+    font-size: 16px;
+  }
+
+  .state p,
+  .label {
+    font-size: 14px;
+  }
+
+  .titleLocation {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+  }
+}

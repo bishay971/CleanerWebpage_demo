@@ -59,3 +59,31 @@
 .form-inner button:hover {
   background-color: darkred;
 }
+
+@media (max-width: 768px) {
+  .form-all, .form-all-line{
+    width: 100%;
+  }
+
+  .form-container{
+    width: 95%;
+    height: auto;
+  }
+
+  .form-inner .dropdowns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-inner button {
+    font-size: 16px;
+  }
+
+  .form-inner {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+
+}

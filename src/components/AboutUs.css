@@ -36,3 +36,27 @@
     font-size: var(--quote);
     color: var(--light);
 }
+
+/* Responsive CSS */
+@media (max-width: 768px){
+    .AboutUs{
+        height: auto;
+    }
+
+    .aboutTitle{
+        font-size: 25px;
+    }
+
+    .aboutH2{
+        font-size: 18px;
+    }
+
+    .aboutH4{
+        font-size: 14px;
+    }
+
+    .slogan-about{
+        font-size: 30px;
+        margin: 10px;
+    }
+}

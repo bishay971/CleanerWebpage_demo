@@ -49,3 +49,29 @@
     max-width: 100%;
     height: auto;
 }
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .section4-container {
+      flex-direction: column;
+      align-items: center;
+      max-height: auto;
+    }
+  
+    .section4-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section4-item {
+      flex: 1 1 80%;
+      margin: 10px 0;
+    }
+  
+    .section4-image {
+      margin: 20px 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }

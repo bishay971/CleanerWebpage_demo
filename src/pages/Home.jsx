@@ -11,6 +11,7 @@ import ContactUs from "../components/ContactUs";
 import ClientCarousel from "../components/ClientCarousel";
 import CleaningLocations from "../components/CleaningLocations";
 import Wcu from "../components/Wcu";
+import SectionContent from "../components/SectionContent";
 
 function Home() {
   return (
@@ -20,8 +21,8 @@ function Home() {
       <Section4 />
       <Section3 />
 
+      <SectionContent />
       <Wcu />
-      <FAQComponent />
       <CleaningLocations />
       <ContactUs />
       <ClientCarousel />

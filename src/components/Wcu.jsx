@@ -18,37 +18,36 @@ const WcuItem = ({ question, answer }) => {
 const Wcu = () => {
   const faqData = [
     {
-      question: "Professional and Reliable Service",
+      question: "How often should I schedule a professional cleaning? ",
       answer:
-        "Our team is composed of trained professionals who adhere to the highest standards of \
-        cleanliness and reliability. We ensure your office environment is spotless, providing a welcoming and productive workspace.",
+        "The frequency of professional cleaning depends on your specific needs. However, most of our customers choose weekly or bi-weekly services to maintain a clean and healthy living environment.",
     },
     {
-      question: "Customizable Cleaning Plans",
+      question: "How can I schedule a cleaning service?",
       answer:
-        "We understand that every office has unique needs. That's why we offer customizable cleaning plans tailored to fit your specific \
-        requirements and schedule, ensuring minimal disruption to your daily operations.",
+        "You can easily schedule a cleaning service by contacting us through our website, giving us a call, or sending us an email. We will arrange a convenient time for you.",
     },
     {
-      question: "Eco-Friendly Cleaning Products",
+      question: "Do you offer services for commercial properties?",
       answer:
-        "We are committed to sustainability and the health of your employees. Our cleaning products are eco-friendly and non-toxic, \
-        providing a safe and healthy environment while minimizing our environmental footprint.",
+        "Yes, we offer professional cleaning services for both residential and commercial properties.",
     },
     {
-      question: "Competitive Pricing and Excellent Value:",
+      question: "Do I need to be home during the cleaning?",
       answer:
-        "We offer competitive pricing without compromising on quality. Our services provide excellent value, ensuring you \
-        receive top-notch cleaning services that meet your budget and exceed your expectations.",
+        "No, you don't need to be home during the cleaning. You can provide us with access to your property and we'll ensure it's secure once the cleaning is complete.",
     },
   ];
 
   return (
-    <div className="faq-container">
-      <h2>Why Choose Us</h2>
-      {faqData.map((item, index) => (
-        <WcuItem key={index} question={item.question} answer={item.answer} />
-      ))}
+    <div className="faq-whole">
+      <div className="line"></div>
+      <div className="faq-container">
+        <h2>Frequently asked Questions</h2>
+        {faqData.map((item, index) => (
+          <WcuItem key={index} question={item.question} answer={item.answer} />
+        ))}
+      </div>
     </div>
   );
 };

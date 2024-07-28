@@ -1,33 +1,56 @@
+
+
+/* Carousel.css */
+
 .carousel-content {
-  font-family: 'Trebuchet MS', sans-serif; 
-  position: relative;
-  height: 70vh;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-section {
+  flex: 0 0 60%;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 78vh;
+  object-fit: cover;
+}
+
+.image-section::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(to right, white, transparent);
+  z-index: 1;
+}
+
+.text-section {
   top: 50%;
-  left: 5%;
   transform: translateY(-50%);
   width: 40%;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.3);
-  /* box-shadow: 2px 2px 5px black; */
   z-index: 2;
   padding: 20px 20px;
+  margin-left: 40px;
 }
 
 .text-section h3 {
   color: var(--red);
   font-weight: bold;
   font-size: 40px;
-  text-shadow: 1px 1px 20px black;
-}
-
-.text-section p{
-  font-size: 20px;
-  color: #faf0e6;
+  text-shadow: 1px 1px 30px var(--black);
 }
 
 .read-more-btn {
@@ -40,21 +63,42 @@
   cursor: pointer;
 }
 
-.image-section {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.image-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .read-more-btn:hover{
   background-color: #575757;
+}
+
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .carousel-content {
+    flex-direction: column;
+  }
+
+  .text-section {
+    order: 2; /* Ensure text-section comes after image-section */
+    top: auto;
+    transform: none;
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .image-section {
+    order: 1; /* Ensure image-section comes before text-section */
+    flex: 0 0 100%;
+  }
+
+  .image-section::before {
+    width: 100%;
+    background: none;
+  }
+
+  .text-section h3 {
+    font-size: 30px;
+  }
+  .carousel-image{
+    height: 40vh;
+    width: auto;
+  }
+
 }
