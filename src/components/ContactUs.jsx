@@ -46,7 +46,7 @@ const FormComponent = () => {
   };
 
   return (
-    <div className="form-all">
+    <div id="contact-us" className="form-all">
       <div className="form-all-line"></div>
       <form className="form-container" onSubmit={handleSubmit}>
         <h2>REQUEST A QUOTE</h2>

@@ -1,93 +1,69 @@
 .header {
-    font-family: 'Trebuchet MS', sans-serif; 
-    align-items: center;
-    padding: 10px 0px;
-    background-color: white;;
-    max-height: 150px;
-  }
-  
-  .main-logo{
-    width: 100%;
-  }
+  align-items: center;
+  padding: 10px 0px;
+  background-color: white;
+  max-height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 90px;
+}
 
-  .main-logo img {
-    width: 100%;
-  }
+.main-logo{
+  width: 100%;
+}
 
-  .slogan{
-    width: 100%;
-    text-align: center;
-    font-size: 35px;
+.main-logo img {
 
-  }
-  .top-navbar{
-    display: flex;
-    justify-content: right;
-    text-align: right;
-    max-height: 30px;
-  }
-  
-  .bottom-navbar{
-    display: flex;
-    justify-content: space-around;
-    max-height: 70px;
-    align-items: center;
-  }
-  .content {
-    width: 100%;
-    padding-left: 10px;
-  }
-  .logo-name{
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .hours {
-    margin-right: 20px;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .after-hours {
-    font-size: 0.8em;
-  }
-  
-  .main-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 10px 0;
-    text-align: left;
-    width: 100%;
-  }
-  
-  .contact {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  .phone {
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
-    margin-right: 20px;
-  }
-  
-  .book-now {
-    background-color: #30a7e1;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  .book-now:hover {
-    background-color: #c91515;
-  }
-  
-  /* Mobile styles */
+  height: 90px;
+  z-index: -3;
+}
+
+.bottom-navbar{
+  display: flex;
+  justify-content: space-around;
+  max-height: 70px;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2em;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.phone-head{
+  width: 80%;
+  font-size: 30px;
+}
+
+.book-now-head{
+  background-color: var(--blue);
+  width: 80%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.book-now-head:hover {
+  background-color: var(--red);
+}
+
+/* Add padding to the body to prevent content from hiding behind the fixed header */
+body {
+  padding-top: 150px; /* Adjust this value based on your header's max-height */
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .header {
     display: flex;
@@ -96,23 +72,24 @@
     height: 40px;
   }
 
-
   .main-logo img {
-    width: 180px; /* Adjust the width as needed */
+    width: 80%;
   }
 
-  .content {
-    width: 120%;
-    padding-left: 0;
+  .book-now-head{
+    width: 100%;
     font-size: 10px;
-    background-color: green;
+    margin: 0 0;
   }
 
-  .top-navbar{
-    display: none;
-  }
-
-  .phone{
+  .phone-head{
     font-size: 10px;
+    width: 140%;
+    margin: 0 0;
+  }
+
+  /* Adjust body padding for mobile */
+  body {
+    padding-top: 60px; /* Adjust this value based on your mobile header's height */
   }
 }

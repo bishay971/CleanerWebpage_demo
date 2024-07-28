@@ -1,13 +1,17 @@
 /* Navbar.css */
 .navi-bar {
   background-color: var(--red);
-  position: relative;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-second {
   height: 60px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
 }
@@ -24,11 +28,13 @@
   display: flex;
   margin: 0;
   padding: 0;
+  z-index: 4;
 }
 
 .nav-items-second li {
   position: relative;
   z-index: 3;
+  transition: background-color 0.2s ease;
 }
 
 .nav-items-second li a {
@@ -42,6 +48,10 @@
 
 .nav-items-second li:hover {
   background-color: var(--black);
+}
+
+.dropdown {
+  transition: display 0.3s ease;
 }
 
 .nav-items-second li:hover .dropdown {
@@ -58,15 +68,26 @@
   z-index: 10;
 }
 
+/* Add this to ensure content doesn't hide behind the fixed navbar */
+body {
+  padding-top: 60px;
+}
+
 @media screen and (max-width: 768px) {
+  .navi-bar{
+    top: 40px;
+  }
+
   .hamburger {
     display: flex;
+    position: fixed;
+    transition: transform 0.3s ease-in-out;
   }
 
   .nav-items-second {
     position: fixed;
     left: -100%;
-    top: 40px;
+    top: 60px;
     flex-direction: column;
     background-color: var(--red);
     width: 215px;
@@ -79,7 +100,7 @@
   }
 
   .nav-items-second li {
-    width: 80%;
+    width: 100%;
   }
 
   .nav-items-second li a {
@@ -88,5 +109,9 @@
 
   .navi-bar.open .navbar-second {
     margin-left: 0;
+  }
+
+  .hamburger.open {
+    transform: translateX(-0px); /* Adjust this value as needed */
   }
 }

@@ -10,14 +10,21 @@ import europcar from "../images/europcar.svg";
 import goodguys from "../images/goodguys.svg";
 import qantas from "../images/qantas.svg";
 import snapfitness from "../images/snapfitness.jpg";
+import medibank from "../images/medibank.svg";
+import combank from "../images/commonwealth.png";
+import bankwest from "../images/bankwest.webp";
+import nabbank from "../images/nab-bank.jpg";
 
 const clientLogos = [
   cleaningKit,
+  medibank,
   europcar,
   goodguys,
+  bankwest,
   qantas,
+  combank,
   snapfitness,
-  qantas,
+  nabbank,
 ];
 
 const ClientCarousel = () => {

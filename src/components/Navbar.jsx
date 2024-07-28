@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-    document.body.style.marginLeft = isOpen ? "0" : "50%";
+    document.body.style.marginLeft = isOpen ? "0" : "0";
   };
 
   const closeNavbar = () => {
@@ -49,7 +49,10 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <button className="hamburger" onClick={toggleNavbar}>
+          <button
+            className={`hamburger ${isOpen ? "open" : ""}`}
+            onClick={toggleNavbar}
+          >
             <Icons.FaBars />
           </button>
         </nav>

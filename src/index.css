@@ -8,11 +8,14 @@
 }
 
 :root {
-    --red: #bf401c;
+    --red: #DA0037;
     --white: #ecf3f9;
-    --light: #B0C4DE;
+    --light: #B4B4B8;
     --black: #36454F;
-    --lighter: #30a7e1;
+    --lighter: #E84545;
+    --grey: #B5C0D0;
+    --blue: #1687A7;
+    --lightblue: #276678;
     --title-size: 40px;
     --size-h2: 25px;
     --size-h3: 20px;

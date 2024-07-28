@@ -3,6 +3,7 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import Section3 from "../components/Section3";
 import Section4 from "../components/Section4";
+import Section5 from "../components/Section5";
 import OurLocations from "../components/ourLocations";
 import Footer from "../components/Footer";
 import AboutUs from "../components/AboutUs";
@@ -12,18 +13,24 @@ import ClientCarousel from "../components/ClientCarousel";
 import CleaningLocations from "../components/CleaningLocations";
 import Wcu from "../components/Wcu";
 import SectionContent from "../components/SectionContent";
+import ServicesComponent from "../components/ServicesComponent";
+import AfterHeader from "../components/AfterHeader";
 
 function Home() {
   return (
     <div>
       <Carousel />
-      <AboutUs />
-      <Section4 />
-      <Section3 />
+      <AfterHeader />
+      <ServicesComponent />
 
       <SectionContent />
-      <Wcu />
+      <AboutUs />
+      <Section5 />
+
+      <Section4 />
       <CleaningLocations />
+      <Wcu />
+
       <ContactUs />
       <ClientCarousel />
       <OurLocations />

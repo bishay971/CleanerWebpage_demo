@@ -1,76 +1,84 @@
-.section-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: #1b2845;
-    padding: 20px;
-  }
-  
-  .content-block {
-    flex: 1 1 45%;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  
-  .content-title {
-    color: #1a73e8;
-    font-size: 20PX;
-    margin-bottom: 10px;
-  }
-  
-  .content-text {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
-  }
+.why-dnd-container {
+  background-color: #276678;
+  color: white;
+  padding: 40px 20px;
+  background-image: url("../images/strata_clean.jpg");
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover; 
+    overflow-y: auto; 
+}
 
-  .title{
-    width: 30%;
-    margin: 30px;
-    font-size: var(--title-size);
-    border-bottom: 2px solid var(--red);
-    color: var(--black);
-  }
-  
-  @media (max-width: 768px) {
-    .content-block {
-      flex: 1 1 100%;
-    }
-  
-    .content-title {
-      font-size: 1.2em;
-    }
-  
-    .content-text {
-      font-size: 0.9em;
-    }
-  
-    .section-content {
-      padding: 10px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .content-title {
-      font-size: 1em;
-    }
-  
-    .content-text {
-      font-size: 0.8em;
-    }
-  
-    .section-content {
-      padding: 5px;
-    }
-    .content-block{
-      margin: 2px;
-      padding: 5px;
-    }
+.wcu-heading {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
 
-    .title{
-      width: 70%;
-      margin: 10px 10px;
-      font-size: 25px;
-    }
-  }
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.equipment {
+  background-image: url('../images/professional.svg');
+}
+
+.staff {
+  background-image: url('../images/customize.svg');
+}
+
+.value {
+  background-image: url('../images/cost-effective.svg');
+}
+
+.wcu-h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color:var(--black);
   
+}
+
+.section-p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section-ul li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.section-ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+}

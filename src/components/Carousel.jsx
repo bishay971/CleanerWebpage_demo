@@ -9,20 +9,20 @@ import cleaningPerson from "../images/carousel1.jpg";
 const slides = [
   {
     image: people,
-    title: "AP Facilities",
+    title: "AP FACILITIES",
     description:
       "Providing service excellence to our communities with care and passion. It’s About You.",
     buttonText: "Read more",
   },
   {
     image: cleaningKit,
-    title: "Committed to Quality",
+    title: "COMMITTED TO QUALITY",
     description: "Ensuring the highest standards in every task we undertake.",
     buttonText: "Learn more",
   },
   {
     image: cleaningPerson,
-    title: "Dedicated Team",
+    title: "DEDICATED TEAM",
     description: "Our team is passionate and dedicated to serving you.",
     buttonText: "Join us",
   },

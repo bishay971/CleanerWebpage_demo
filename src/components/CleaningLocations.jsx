@@ -12,7 +12,10 @@ const CleaningLocations = () => {
   return (
     <section className="cleaning-locations">
       <div className="container">
-        <h1>Cleaning Service Locations around Australia</h1>
+        <h1 className="servicesh1">
+          Cleaning Service Locations around{" "}
+          <span className="comp-name">Australia</span>
+        </h1>
         <p>
           We now operate in all major suburbs in Sydney, Brisbane, Perth,
           Adelaide and Canberra. To find out more about availability in your

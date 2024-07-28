@@ -37,16 +37,32 @@ const Wcu = () => {
       answer:
         "No, you don't need to be home during the cleaning. You can provide us with access to your property and we'll ensure it's secure once the cleaning is complete.",
     },
+    {
+      question: "What if i need to report a problem ?",
+      answer:
+        "We provide you with your very own Account Manager who is your dedicated point of contact. Any problems, just get in touch and they will take care of everything for you.",
+    },
+    {
+      question: "How are your cleaners vetted?",
+      answer:
+        "All of our prospective cleaners are asked to provide proof of identification and home address. They are also police and DBS checked, and references are sought to verify their experience and work ethic.",
+    },
   ];
 
   return (
     <div className="faq-whole">
-      <div className="line"></div>
-      <div className="faq-container">
-        <h2>Frequently asked Questions</h2>
-        {faqData.map((item, index) => (
-          <WcuItem key={index} question={item.question} answer={item.answer} />
-        ))}
+      <div className="container">
+        <div className="line"></div>
+        <div className="faq-container">
+          <h2>Frequently asked Questions</h2>
+          {faqData.map((item, index) => (
+            <WcuItem
+              key={index}
+              question={item.question}
+              answer={item.answer}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

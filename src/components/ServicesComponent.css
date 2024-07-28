@@ -1,0 +1,141 @@
+.cleaning-services {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    margin-top: 40px;
+  }
+  
+  
+  .servicesh1 {
+    font-size: var(--title-size);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: var(--light);
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    
+    transition: background-color 0.3s ease;
+    transition: scale 0.3s ease-in;
+    height: 35vh;
+  }
+
+  .service-item {
+    position: relative; /* Add this line */
+  }
+
+  
+  .service-image {
+    position: absolute; /* Add this line */
+    top: 0; /* Add this line */
+    left: 0; /* Add this line */
+    width: 100%; /* Add this line */
+    height: 100%; /* Add this line */
+    object-fit: cover; /* Add this line */
+    z-index: -2; /* Add this line */
+
+  }
+
+
+  .service-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--grey);
+    opacity: 1;
+    transition: opacity 0.6s ease-in;
+    z-index: 2;
+  }
+  
+  .service-item:hover {
+    background-color: var(--grey);
+    box-shadow: 5px 5px 5px var(--light);
+    scale: 1.03;
+  }
+  
+  .service-item:hover .service-name {
+    text-decoration: underline;
+    translate: 0 0px;
+    color: var(--red);
+  }
+
+  .service-item:hover .service-text{
+    color: var(--black);
+    opacity: 1;
+  }
+  
+  .service-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: translate 0.2s ease-in;
+  }
+  
+  .service-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: translate 0.2s ease-in;
+    
+  }
+
+  /* .service-icon, .service-name{
+    translate: 0 100px;
+  } */
+  
+  .service-item:hover .service-icon{
+    translate: 0 0px;
+  }
+
+/* .service-item:nth-child(odd){
+    background-color: var(--blue);
+}
+
+.service-item:nth-child(even){
+    background-color: var(--red);
+} */
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cleaning-services {
+    height: auto;
+  }
+
+  .service-item {
+    height: auto;
+  }
+
+  .service-text {
+    font-size: 14px;
+    display: none;
+  }
+
+  .service-icon {
+    font-size: 28px;
+  }
+
+  .service-name {
+    font-size: 16px;
+  }
+
+}
