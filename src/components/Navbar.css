@@ -87,7 +87,7 @@ body {
   .nav-items-second {
     position: fixed;
     left: -100%;
-    top: 60px;
+    top: 90px;
     flex-direction: column;
     background-color: var(--red);
     width: 215px;

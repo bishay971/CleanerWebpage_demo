@@ -99,4 +99,12 @@
   .section4-item {
     padding: 10px;
   }
+  .section4-p{
+    display: none;
+  }
+
+  .section4-title{
+    color: var(--red);
+    font-weight: bold;
+  }
 }

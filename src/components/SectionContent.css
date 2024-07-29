@@ -63,6 +63,7 @@
 .section-p{
   text-align: center;
   margin-bottom: 20px;
+  color: var(--grey);
 }
 
 .section-ul {
@@ -74,11 +75,21 @@
   margin-bottom: 10px;
   padding-left: 25px;
   position: relative;
+  color: var(--light);
 }
 
 .section-ul li::before {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #ffd700;
+  color: var(--red);
+}
+
+@media (max-width: 768px) {
+  .wcu-heading{
+    font-size: 25px;
+  }
+  .wcu-h2{
+    color: var(--white);
+  }
 }

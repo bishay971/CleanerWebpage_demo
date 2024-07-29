@@ -54,7 +54,9 @@ const Wcu = () => {
       <div className="container">
         <div className="line"></div>
         <div className="faq-container">
-          <h2>Frequently asked Questions</h2>
+          <h2 className="faq">
+            Frequently asked <span className="comp-name">Questions</span>{" "}
+          </h2>
           {faqData.map((item, index) => (
             <WcuItem
               key={index}

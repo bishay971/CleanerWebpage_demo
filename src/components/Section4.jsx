@@ -44,7 +44,7 @@ const Section4 = () => {
           <div className="section4-item">
             <div className={`section4-icon ${section.iconClass}`}></div>
             <h3 className="section4-title">{section.title}</h3>
-            <p>{section.text}</p>
+            <p className="section4-p">{section.text}</p>
           </div>
         </div>
       ))}

@@ -2,17 +2,19 @@
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
-    background-color: var(--white);
+    background-color: var(--blue);
   }
   
   .cleaning-locations h1 {
-    font-size: 24px;
+    font-size: var(--title-size);
     margin-bottom: 20px;
+    color: var(--white);
   }
   
   .cleaning-locations p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 30px;
+    color: var(--grey);
   }
   
   .location-grid {
@@ -47,10 +49,18 @@
     .location-item {
       flex-basis: calc(50% - 5px);
     }
+    
+    .cleaning-locations h1{
+      font-size: 25px;
+    }
   }
   
   @media (max-width: 600px) {
     .location-item {
       flex-basis: 100%;
+    }
+
+    .cleaning-locations h1{
+      font-size: 25px;
     }
   }

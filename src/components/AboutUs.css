@@ -65,7 +65,8 @@
 
 .slogan-about{
     font-size: var(--quote);
-    color: var(--blue);
+    color: var(--red);
+    font-weight: bold;
     margin-top: 50px;
 }
 
@@ -85,11 +86,11 @@
   }
   
   .stat-item:nth-child(odd) {
-    background-color: #276678;
+    background-color: var(--blue);
   }
   
   .stat-item:nth-child(even) {
-    background-color: #1687A7;
+    background-color: var(--lightblue);
   }
   
   .stat-item h2 {
