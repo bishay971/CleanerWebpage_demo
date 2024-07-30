@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import * as Icons from "react-icons/fa";
 import "./Navbar.css";
@@ -8,6 +8,20 @@ import Dropdown from "./Dropdown";
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust this value based on your mobile breakpoint
+    };
+
+    handleResize(); // Check initial size
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -30,13 +44,13 @@ const Navbar = () => {
                   <li
                     key={item.id}
                     className={item.cName}
-                    onMouseEnter={() => setDropdown(true)}
-                    onMouseLeave={() => setDropdown(false)}
+                    onMouseEnter={() => !isMobile && setDropdown(true)}
+                    onMouseLeave={() => !isMobile && setDropdown(false)}
                   >
                     <Link to={item.path} onClick={closeNavbar}>
                       {item.title}
                     </Link>
-                    {dropdown && <Dropdown />}
+                    {dropdown && !isMobile && <Dropdown />}
                   </li>
                 );
               }

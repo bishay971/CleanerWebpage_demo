@@ -15,7 +15,7 @@
 }
 
 .services-submenu li:hover {
-  background-color: var(--secondary2);
+  background-color: var(--primary);
 }
 
 .services-submenu.clicked {
@@ -23,6 +23,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  
+
 }
 

@@ -89,7 +89,7 @@
   }
   
   .stat-item:nth-child(even) {
-    background-color: var(--secondary2);
+    background-color: var(--primary);
   }
   
   .stat-item h2 {

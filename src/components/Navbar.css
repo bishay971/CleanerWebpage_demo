@@ -113,8 +113,10 @@ body {
     margin-left: 0;
   }
 
-  .nav-items-second li:hover .dropdown {
-    display: none;
+  @media (max-width: 768px) {
+    .dropdown {
+      display: none;
+    }
   }
 
   .hamburger.open {
