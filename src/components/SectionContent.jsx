@@ -56,7 +56,7 @@ const SectionContent = () => {
           <div className="feature-card">
             <div className="icon staff"></div>
             <h2 className="wcu-h2">CUSTOMIZABLE</h2>
-            <p>
+            <p className="section-p">
               We offer customizable cleaning plans tailored to fit your specific
               requirements and schedule, ensuring minimal disruption to your
               daily operations.
@@ -72,7 +72,7 @@ const SectionContent = () => {
           <div className="feature-card">
             <div className="icon value"></div>
             <h2 className="wcu-h2">COMPETITIVE PRICING</h2>
-            <p>
+            <p className="section-p">
               We offer competitive pricing without compromising on quality..
             </p>
             <ul className="section-ul">

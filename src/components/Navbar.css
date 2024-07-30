@@ -1,8 +1,8 @@
 /* Navbar.css */
 .navi-bar {
-  background-color: var(--red);
+  background-color: var(--secondary);
   position: fixed;
-  top: 90px;
+  top: 60px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -44,14 +44,16 @@
   display: flex;
   align-items: center;
   height: 60px;
+  transition: color 0.2s ease;
 }
 
-.nav-items-second li:hover {
-  background-color: var(--black);
+.nav-items-second li:hover a{
+  color: var(--white);
 }
 
 .dropdown {
   transition: display 0.3s ease;
+  
 }
 
 .nav-items-second li:hover .dropdown {
@@ -62,7 +64,7 @@
   display: none;
   background: none;
   border: none;
-  color: var(--black);
+  color: var(--white);
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 10;
@@ -87,9 +89,9 @@ body {
   .nav-items-second {
     position: fixed;
     left: -100%;
-    top: 90px;
+    top: 100px;
     flex-direction: column;
-    background-color: var(--red);
+    background-color: var(--primary);
     width: 215px;
     height: calc(100% - 60px);
     transition: 0.3s;
@@ -109,6 +111,10 @@ body {
 
   .navi-bar.open .navbar-second {
     margin-left: 0;
+  }
+
+  .nav-items-second li:hover .dropdown {
+    display: none;
   }
 
   .hamburger.open {

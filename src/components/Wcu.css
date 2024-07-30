@@ -7,7 +7,7 @@
 .faq-container {
     margin: 0 auto;
     padding: 20px;
-    color: var(--blue);
+    color: var(--secondary);
      
   }
   
@@ -37,7 +37,7 @@
   .arrow {
     margin-right: 10px;
     transition: transform 0.3s ease;
-    color: var(--blue);
+    color: var(--secondary);
   }
   
   .arrow.open {

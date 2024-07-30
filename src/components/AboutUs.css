@@ -1,6 +1,5 @@
 .AboutUs{
-    font-family: 'Trebuchet MS', sans-serif; 
-    background-color: var(--white);
+    background-color: var(--grey);
     height: auto; /* Example: Set component height to full viewport height */
     display: flex;
     justify-content: center;
@@ -37,7 +36,7 @@
 .aboutTitle {
     margin-top: 40px;
     font-size: var(--title-size);
-    border-bottom: 2px solid var(--red); /* Adjust color and thickness as needed */
+    border-bottom: 2px solid var(--primary); /* Adjust color and thickness as needed */
     display: inline-block;
     padding-bottom: 5px; /* Adjust space between text and underline */
     width: 30%;
@@ -65,7 +64,7 @@
 
 .slogan-about{
     font-size: var(--quote);
-    color: var(--red);
+    color: var(--primary);
     font-weight: bold;
     margin-top: 50px;
 }
@@ -86,11 +85,11 @@
   }
   
   .stat-item:nth-child(odd) {
-    background-color: var(--blue);
+    background-color: var(--secondary);
   }
   
   .stat-item:nth-child(even) {
-    background-color: var(--lightblue);
+    background-color: var(--secondary2);
   }
   
   .stat-item h2 {

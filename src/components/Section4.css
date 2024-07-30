@@ -22,6 +22,14 @@
     align-items: center;
     background-color: var(--white);
   }
+
+  .section4-card:nth-child(odd) {
+    margin-top: 80px;
+    background-color: var(--secondary);
+  }
+  .section4-card:nth-child(even) {
+    background-color: var(--primary);
+  }
   
   .section4-image {
     width: 100%;
@@ -50,6 +58,7 @@
     background-size: contain;
     align-items: center;
   }
+
 
     
 
@@ -104,7 +113,15 @@
   }
 
   .section4-title{
-    color: var(--red);
+    color: var(--black);
     font-weight: bold;
+  }
+
+  .section4-card:nth-child(odd) {
+    margin: 0;
+    background-color: var(--secondary);
+  }
+  .section4-card:nth-child(even) {
+    background-color: var(--primary);
   }
 }

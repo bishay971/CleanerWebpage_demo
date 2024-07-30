@@ -35,21 +35,22 @@
   z-index: 2;
   padding: 20px 20px;
   margin-left: 40px;
+  background-color: rgba(11, 11, 11, 0.2);
 }
 
 .text-section h3 {
-  color: var(--red);
+  color: var(--primary);
   font-weight: bold;
   font-size: 45px;
 }
 
 .text-section p {
   font-size: 30px;
-  color: var(--blue);
+  color: var(--secondary);
 }
 
 .read-more-btn {
-  background-image: linear-gradient(var(--black), var(--blue));
+  background-image: linear-gradient(var(--black), var(--secondary));
   color: var(--white);
   width: 30%;
   padding: 10px 20px;
@@ -61,7 +62,7 @@
 }
 
 .read-more-btn:hover{
-  background-image: linear-gradient(var(--red), var(--red));
+  background-image: linear-gradient(var(--primary), var(--primary));
 }
 
 
@@ -91,7 +92,7 @@
   }
 
   .text-section h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .carousel-image{
     height: 40vh;
@@ -99,11 +100,11 @@
   }
 
   .read-more-btn{
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
   }
 
   .text-section p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }

@@ -8,13 +8,15 @@
 }
 
 :root {
-    --red: #DA0037;
-    --white: #ecf3f9;
-    --light: #B4B4B8;
-    --black: #36454F;
+    --primary: #f13c20;
+    --secondary: #4056a1;
+    --secondary2: #d79922;
+    --white: #c5cbe3;
+    --light: #141414;
+    --black: #141414;
     --lighter: #E84545;
-    --grey: #B5C0D0;
-    --blue: #1A5A75;
+    --grey: #eee2dc;
+
     --lightblue: #276678;
     --yellow: #F4CD02;
     --title-size: 40px;
@@ -32,7 +34,7 @@
   }
 
   .comp-name{
-    color: var(--red);
+    color: var(--primary);
   }
 
   @media screen and (max-width: 768px){

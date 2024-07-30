@@ -1,6 +1,11 @@
 .after-header-whole {
     width: 100%;
-    background-image: linear-gradient(var(--blue), var(--grey));
+    /* background-image: linear-gradient(var(--secondary), var(--grey)); */
+    background-color: var(--white);
+    background-image: url("../images/carousel1.jpg");
+    background-blend-mode: overlay;
+    background-size: cover; 
+    overflow-y: auto;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -23,7 +28,7 @@
   
   .call-us-details {
     font-size: 40px;
-    color: var(--red); /* Example text color */
+    color: var(--secondary); /* Example text color */
   }
   
   .book-now-button {
@@ -34,7 +39,7 @@
     font-size: 40px;
     font-weight: bold;
     color: #fff; /* Button text color */
-    background-image: linear-gradient(var(--black), var(--blue));
+    background-image: linear-gradient(var(--black), var(--secondary));
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
@@ -43,13 +48,10 @@
   }
 
   .now{
-    color: var(--red);
+    color: var(--primary);
     font-style: italic;
   }
   
-  .book-now-header:hover {
-    background-color: #0056b3; /* Button hover color */
-  }
 
   .book-now-header:hover{
     animation: oscillate 0.5s infinite alternate;

@@ -11,14 +11,18 @@
 .services-submenu li {
   cursor: pointer;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--secondary);
 }
 
 .services-submenu li:hover {
-  background-color: var(--red);
+  background-color: var(--secondary2);
 }
 
 .services-submenu.clicked {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  
 }
 

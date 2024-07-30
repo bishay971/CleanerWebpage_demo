@@ -1,95 +1,140 @@
-.header {
-  align-items: center;
-  padding: 10px 0px;
-  background-color: white;
-  max-height: 150px;
+.navbar-header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  height: 90px;
+  height: 60px;
 }
 
-.main-logo{
-  width: 100%;
-}
-
-.main-logo img {
-
-  height: 90px;
-  z-index: -3;
-}
-
-.bottom-navbar{
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  max-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
   align-items: center;
 }
 
-.phone {
+.navbar-right {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  font-size: 1.2em;
-  margin-right: 10px;
-  width: 100%;
 }
 
-.phone-head{
-  width: 80%;
-  font-size: 30px;
+.phone-number {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
 }
 
-.book-now-head{
-  background-color: var(--blue);
-  width: 80%;
+.book-now {
+  background-color: var(--primary);
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
   cursor: pointer;
-  margin-left: 20px;
-  border-radius: 20px;
+  margin-right: 20px;
 }
 
-.book-now-head:hover {
-  background-color: var(--red);
+.social-links {
+  display: flex;
+  gap: 10px;
 }
 
-/* Add padding to the body to prevent content from hiding behind the fixed header */
-body {
-  padding-top: 150px; /* Adjust this value based on your header's max-height */
+.social-links a {
+  color: #333;
+  font-size: 20px;
 }
 
-/* Mobile styles */
+.logo {
+  height: 40px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
 @media (max-width: 768px) {
-  .header {
-    display: flex;
+  .navbar-container {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .navbar-section {
+    flex-basis: 33.33%;
+  }
+
+  .left {
+    order: 1;
+    justify-content: flex-start;
+  }
+
+  .center {
+    order: 2;
+    justify-content: center;
+  }
+
+  .right {
+    order: 3;
+    justify-content: flex-end;
+  }
+
+  .phone-number, .book-now {
+    font-size: 0.8em;
+  }
+
+  .book-now {
+    padding: 6px 12px;
+  }
+
+  .social-links a {
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
     padding: 10px;
-    height: 40px;
   }
 
-  .main-logo img {
-    width: 80%;
+  .phone-number {
+    display: none;
   }
 
-  .book-now-head{
-    width: 100%;
-    font-size: 10px;
-    margin: 0 0;
+  .book-now {
+    font-size: 0.7em;
+    padding: 4px 8px;
   }
 
-  .phone-head{
-    font-size: 10px;
-    width: 140%;
-    margin: 0 0;
+  .social-links a {
+    font-size: 14px;
   }
 
-  /* Adjust body padding for mobile */
-  body {
-    padding-top: 60px; /* Adjust this value based on your mobile header's height */
+  .logo {
+    height: 25px;
   }
 }
