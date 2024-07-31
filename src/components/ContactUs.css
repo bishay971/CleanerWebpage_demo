@@ -1,6 +1,6 @@
 .form-all-line{
   height: 10px;
-  background-color: var(--red);
+  background-color: var(--primary);
   margin: 30px auto;
   width: 80%;
 }
@@ -14,7 +14,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  height: 80vh;
+  height: 70vh;
 }
 
 .form-container h2 {

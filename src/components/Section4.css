@@ -24,11 +24,10 @@
   }
 
   .section4-card:nth-child(odd) {
-    margin-top: 80px;
     background-color: var(--secondary);
   }
   .section4-card:nth-child(even) {
-    background-color: var(--primary);
+    background-color: var(--white);
   }
   
   .section4-image {
@@ -85,14 +84,16 @@
   /* General mobile styles */
 @media (max-width: 767px) {
   .section4-container {
-    flex-direction: column;
-    padding: 10px;
+    display: flex;
+    padding: 20px 10px;
+    margin: 0px 0px;
     height: auto; /* Adjust height for smaller screens */
   }
 
   .section4-card {
-    width: 90%; /* Increase width to fit smaller screens */
-    margin: 10px auto; /* Center cards horizontally */
+    width: 100%; /* Increase width to fit smaller screens */
+    margin: 10px 10px; /* Center cards horizontally */
+    padding: 0 0;
   }
   
   .section4-image {
@@ -106,6 +107,9 @@
   }
   
   .section4-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
   }
   .section4-p{
@@ -115,13 +119,10 @@
   .section4-title{
     color: var(--black);
     font-weight: bold;
+    margin-left: 20px;
   }
 
-  .section4-card:nth-child(odd) {
+  .section4-card{
     margin: 0;
-    background-color: var(--secondary);
-  }
-  .section4-card:nth-child(even) {
-    background-color: var(--primary);
   }
 }

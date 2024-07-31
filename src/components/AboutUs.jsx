@@ -13,12 +13,11 @@ function AboutUs() {
             </h2>
             <h2 className="aboutH2">
               <span className="comp-name">AP Cleaning</span> offers professional
-              cleaning services for homes and commercial properties. Since 2020,
-              we have expanded our service portfolio to offer a wide range of
-              home services, including carpet cleaning, upholstery cleaning,
-              area rug cleaning, tile & grout cleaning, wood floor cleaning, air
-              duct cleaning, fire and water damage restoration services, and
-              mold remediation in houses, schools, offices, and other commercial
+              cleaning services for all kind of professional sectors. Since
+              2020, we have expanded our service portfolio to offer a wide range
+              of cleaning services, including carpet cleaning, floor cleaning,
+              strata cleaning, window cleaning, washroom cleaning, car detailing
+              in medical facilities, schools, offices, and other commercial
               buildings.
             </h2>
             <h4 className="aboutH4">
@@ -28,30 +27,31 @@ function AboutUs() {
               knowledgeable technicians who utilize the best techniques in the
               industry and use the right equipment. With the convenience of
               scheduling seven days a week, you're sure to find a good time for
-              your cleaning appointment with AP Facilities - a cleaning provider
-              you can trust.
+              your cleaning appointment with{" "}
+              <span className="comp-name">AP Cleaning</span> - a cleaning
+              provider you can trust.
             </h4>
             <div className="slogan-about">A COMPANY YOU CAN TRUST</div>
           </div>
 
           <div className="image-grid">
-            <div class="stats-container">
-              <div class="stat-item">
+            <div className="stats-container">
+              <div className="stat-item">
                 <h2>100+</h2>
                 <h3>Happy Clients</h3>
                 <p>Over hundred commercial clients satisfied.</p>
               </div>
-              <div class="stat-item">
-                <h2>20+</h2>
+              <div className="stat-item">
+                <h2>30+</h2>
                 <h3>Amazing Staff</h3>
                 <p>A professional team ready to help your business.</p>
               </div>
-              <div class="stat-item">
-                <h2>500+</h2>
+              <div className="stat-item">
+                <h2>400+</h2>
                 <h3>Projects Completed</h3>
-                <p>Successfully delivered projects across industries.</p>
+                <p>Successfully completed projects across industries.</p>
               </div>
-              <div class="stat-item">
+              <div className="stat-item">
                 <h2>24/7</h2>
                 <h3>Support</h3>
                 <p>Round-the-clock assistance for our clients.</p>

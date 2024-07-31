@@ -1,0 +1,31 @@
+.book-after-header-whole{
+    text-align: center;
+    background-color: var(--grey);
+    padding: 20px;
+}
+.book-book-now-button{
+    padding: 30px;
+}
+.book-book-now-header{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: scale 0.7s ease;
+    color: var(--white);
+}
+
+.book-book-now-header:hover{
+    background-color: var(--secondary);
+    scale: 1.07;
+}
+
+@media (max-width: 767px) {
+    .book-book-now-header{
+        font-size: 30px;
+    }
+}

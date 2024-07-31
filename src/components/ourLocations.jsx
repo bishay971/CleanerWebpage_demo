@@ -17,7 +17,7 @@ function OurLocations() {
             <div className="support-office">
               <h2 className="header-off">Support Office</h2>
               <h3 className="country">Australia</h3>
-              <div class="state">
+              <div className="state">
                 <h4>Western Australia</h4>
                 <p>
                   37A/35 camberwell street,
@@ -27,7 +27,7 @@ function OurLocations() {
                 <p>
                   <span className="label">T:</span> +61 0 4367 8275
                   <br />
-                  <span className="label">E:</span> mail@apfacilities.com.au
+                  <span className="label">E:</span> info@apfacilities.com.au
                 </p>
               </div>
             </div>

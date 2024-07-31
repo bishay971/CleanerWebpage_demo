@@ -14,6 +14,8 @@ const FormComponent = () => {
     zipCode: "",
   });
 
+  const [showPopup, setShowPopup] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -23,10 +25,17 @@ const FormComponent = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(
+        "service_nlp2zrb",
+        "template_j44xav6",
+        e.target,
+        "t4fRZ7NNaNMdtxwwe"
+      )
       .then(
         (result) => {
           console.log(result.text);
+          setShowPopup(true);
+          setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
         },
         (error) => {
           console.log(error.text);
@@ -130,6 +139,11 @@ const FormComponent = () => {
           <button type="submit">REQUEST A QUOTE</button>
         </div>
       </form>
+      {showPopup && (
+        <div className="popup">
+          Your request has been submitted. Our team will reach out to you soon.
+        </div>
+      )}
     </div>
   );
 };

@@ -33,11 +33,21 @@
     align-items: center;
     padding: 15px;
     border-bottom: 2px solid #e0e0e0;
-    
+    border-radius: 10px;
     transition: background-color 0.3s ease;
     transition: scale 0.3s ease-in;
     height: 35vh;
+    background-color: var(--secondary);
   }
+
+  /* .service-item:nth-child(odd){
+    background-color: var(--primary);
+    
+  }
+
+  .service-item:nth-child(even){
+    background-color: var(--secondary);
+  } */
 
   .service-item {
     position: relative; /* Add this line */
@@ -55,11 +65,13 @@
 
   }
 
-
+  .highlight{
+    color: var(--primary);
+  }
   .service-text {
     margin-top: 10px;
     font-size: 16px;
-    color: var(--grey);
+    color: var(--black);
     opacity: 1;
     transition: opacity 0.6s ease-in;
     z-index: 2;
@@ -78,9 +90,18 @@
   }
 
   .service-item:hover .service-text{
-    color: var(--black);
+    color: var(--secondary);
     opacity: 1;
   }
+
+  /* .service-item:nth-child(even) .highlight{
+    color: var(--primary);
+  }
+
+  .service-item:nth-child(odd) .highlight{
+    color: var(--secondary);
+  } */
+
   
   .service-icon {
     font-size: 36px;
@@ -91,7 +112,7 @@
   .service-name {
     font-size: 20px;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--grey);
     transition: translate 0.2s ease-in;
     
   }
@@ -104,6 +125,26 @@
     translate: 0 0px;
   }
 
+  .service-item:hover .highlight{
+    animation: beat 1s infinite;
+  }
+
+  /* Create the keyframes for the beat effect */
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Apply the animation to the element */
+.beat-effect {
+  display: inline-block;
+  animation: beat 1s infinite;
+}
+
 /* .service-item:nth-child(odd){
     background-color: var(--blue);
 }
@@ -115,10 +156,12 @@
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
+   
   }
 
   .cleaning-services {
     height: auto;
+    
   }
 .servicesh1{
   font-size: 25px;

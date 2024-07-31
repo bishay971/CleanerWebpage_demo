@@ -14,17 +14,23 @@ import medibank from "../images/medibank.svg";
 import combank from "../images/commonwealth.png";
 import bankwest from "../images/bankwest.webp";
 import nabbank from "../images/nab-bank.jpg";
+import cos from "../images/cos.png";
+import anaconda from "../images/anaconda.jpg";
+import spotlight from "../images/spotlight.png";
 
 const clientLogos = [
   cleaningKit,
   medibank,
   europcar,
-  goodguys,
+  cos,
   bankwest,
+  goodguys,
   qantas,
+  spotlight,
   combank,
   snapfitness,
   nabbank,
+  anaconda,
 ];
 
 const ClientCarousel = () => {
@@ -41,6 +47,9 @@ const ClientCarousel = () => {
 
   return (
     <div className="carousel-container container">
+      <div className="carousel-title">
+        Our Happy <span className="comp-name">Clients</span>
+      </div>
       <Slider {...settings}>
         {clientLogos.map((logo, index) => (
           <div key={index} className="carousel-slide">

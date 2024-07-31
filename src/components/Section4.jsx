@@ -14,12 +14,6 @@ const sections = [
     image: kit,
   },
   {
-    title: "Streamlined Booking",
-    iconClass: "streamlined-booking",
-    text: "With an easy, efficient booking process, we flexibly align our maid services with your busy timetable for each appointment.",
-    image: phonecall,
-  },
-  {
     title: "Customer-oriented",
     iconClass: "customer-oriented",
     text: "Our friendly office staff is always available to answer questions, and our on-site crew collaborates with you for optimal results.",
@@ -30,6 +24,12 @@ const sections = [
     iconClass: "high-quality",
     text: "We are committed to upholding our strict standards, all to guarantee the superior quality of the cleaning service we deliver.",
     image: office_cleaning,
+  },
+  {
+    title: "Streamlined Booking",
+    iconClass: "streamlined-booking",
+    text: "With an easy, efficient booking process, we flexibly align our maid services with your busy timetable for each appointment.",
+    image: phonecall,
   },
 ];
 

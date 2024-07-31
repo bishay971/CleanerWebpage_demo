@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <div className="navbar-left">
           <a href="tel:+1234567890" className="phone-number">
-            <FaPhone /> +1 (234) 567-890
+            <FaPhone /> +61 0 4367 8275
           </a>
           <button className="book-now">Book Now</button>
           <div className="social-links">

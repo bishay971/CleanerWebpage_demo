@@ -17,6 +17,12 @@
     max-width: 100%; /* Ensure image doesn't overflow container */
     
   }
+  .carousel-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
   /* Mobile styles */
 @media (max-width: 768px) {
@@ -26,6 +32,9 @@
     max-width: 100%; /* Ensure image doesn't overflow container */
     padding: 10px;
     
+  }
+  .carousel-title{
+    font-size: 25px;
   }
 }
   

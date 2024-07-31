@@ -8,7 +8,6 @@ function Section5() {
       <div className="section5-flex-container">
         <div className="section5-call-us">
           YOUR CLEAN AREA IS JUST A PHONE CALL AWAY
-          <div className="section5-call-us-details">+61 0 4367 8275</div>
         </div>
         <Link
           to="contact-us"

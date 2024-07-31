@@ -15,6 +15,7 @@ import Wcu from "../components/Wcu";
 import SectionContent from "../components/SectionContent";
 import ServicesComponent from "../components/ServicesComponent";
 import AfterHeader from "../components/AfterHeader";
+import BookNow from "../components/BookNow";
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
       <Section5 />
 
       <Section4 />
+      <BookNow />
       <CleaningLocations />
       <Wcu />
 

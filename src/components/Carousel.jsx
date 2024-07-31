@@ -9,7 +9,7 @@ import cleaningPerson from "../images/carousel1.jpg";
 const slides = [
   {
     image: people,
-    title: "AP FACILITIES",
+    title: "AP CLEANING",
     description:
       "Providing service excellence to our communities with care and passion. It’s About You.",
     buttonText: "Read more",
