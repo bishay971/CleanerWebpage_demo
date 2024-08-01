@@ -6,7 +6,7 @@
   background-color: var(--white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  height: 60px;
+  height: 70px;
 }
 
 .navbar-container {
@@ -24,15 +24,17 @@
 }
 
 .navbar-right {
-  display: flex;
-  align-items: center;height: 100%;
   padding: 0 0;
   margin: 0 0 ;
 }
 
-.navbar-right img{
-  padding: 0 0;
-  margin: 0 0 ;
+.navbar-right .logo{
+  padding: 2px 2px;
+  margin: 8px 0px;
+  position: absolute;
+  top: -100%;
+  height: 170px;
+  animation: bounce 2s infinite;
 }
 
 .phone-number {
@@ -63,10 +65,6 @@
   font-size: 20px;
 }
 
-.logo {
-  height: 40px;
-  animation: bounce 2s infinite;
-}
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -117,15 +115,12 @@
   .social-links a {
     font-size: 16px;
   }
-
-  .logo {
-    height: 30px;
-  }
 }
 
 @media (max-width: 480px) {
   .navbar-container {
     padding: 10px;
+    height: 60px;
   }
 
   .phone-number {
@@ -141,7 +136,9 @@
     font-size: 14px;
   }
 
-  .logo {
-    height: 25px;
+  .navbar-right .logo {
+    height: 140px;
+    position: absolute;
+    top: -80%;
   }
 }

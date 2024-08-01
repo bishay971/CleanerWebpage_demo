@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css"; // Import the CSS file
 import { FaPhone, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import logo from "../images/logo.jpeg";
+import logo from "../images/1rmbg.png";
 
 const Header = () => {
   return (
