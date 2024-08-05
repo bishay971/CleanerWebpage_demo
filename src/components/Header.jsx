@@ -1,5 +1,7 @@
 import React from "react";
 import "./Header.css"; // Import the CSS file
+
+import { Link } from "react-scroll";
 import { FaPhone, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import logo from "../images/1rmbg.png";
@@ -15,7 +17,15 @@ const Header = () => {
           <a href="tel:+1234567890" className="phone-number">
             <FaPhone /> +61 0 4367 8275
           </a>
-          <button className="book-now">Book Now</button>
+          <Link
+            to="contact-us"
+            smooth={true}
+            duration={500}
+            className="book-now-button"
+          >
+            <button className="book-now">Book Now</button>
+          </Link>
+
           <div className="social-links">
             <a
               href="https://facebook.com"
