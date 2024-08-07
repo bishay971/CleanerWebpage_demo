@@ -57,7 +57,6 @@ const SectionContent = () => {
               <li>Diverse Workforce</li>
               <li>Cultural Celebration</li>
               <li>Community Inclusion</li>
-              <li>Indigenous Support</li>
             </ul>
           </div>
         </div>
